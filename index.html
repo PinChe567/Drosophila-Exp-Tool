@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的 3D 模型</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        /* 設定 3D 視窗的大小 */
+        model-viewer {
+            width: 100%;
+            height: 500px;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+    <model-viewer 
+        src="Big Transmittion.glb" 
+        alt="我的 3D 模型" 
+        auto-rotate 
+        camera-controls>
+    </model-viewer>
+
+</body>
+</html>
